@@ -454,3 +454,4 @@ dist
 # TernJS port file
 .tern-port
 /Web/package-lock.json
+/Encrypt/package-lock.json
