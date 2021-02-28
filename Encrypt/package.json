@@ -1,0 +1,9 @@
+{
+  "name": "encrypt",
+  "version": "0.0.0",
+  "description": "Encrypt",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

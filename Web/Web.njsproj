@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Web</Name>
+    <RootNamespace>Web</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bdae6009-f68e-4912-a490-37c632f8b575</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="Network.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="public\Flags\AD.svg" />
+    <Content Include="public\Flags\AE.svg" />
+    <Content Include="public\Flags\AF.svg" />
+    <Content Include="public\Flags\AG.svg" />
+    <Content Include="public\Flags\AI.svg" />
+    <Content Include="public\Flags\AL.svg" />
+    <Content Include="public\Flags\AM.svg" />
+    <Content Include="public\Flags\AO.svg" />
+    <Content Include="public\Flags\AR.svg" />
+    <Content Include="public\Flags\AS.svg" />
+    <Content Include="public\Flags\AT.svg" />
+    <Content Include="public\Flags\AU.svg" />
+    <Content Include="public\Flags\AW.svg" />
+    <Content Include="public\Flags\AX.svg" />
+    <Content Include="public\Flags\AZ.svg" />
+    <Content Include="public\Flags\BA.svg" />
+    <Content Include="public\Flags\BB.svg" />
+    <Content Include="public\Flags\BD.svg" />
+    <Content Include="public\Flags\BE.svg" />
+    <Content Include="public\Flags\BF.svg" />
+    <Content Include="public\Flags\BG.svg" />
+    <Content Include="public\Flags\BH.svg" />
+    <Content Include="public\Flags\BI.svg" />
+    <Content Include="public\Flags\BJ.svg" />
+    <Content Include="public\Flags\BM.svg" />
+    <Content Include="public\Flags\BN.svg" />
+    <Content Include="public\Flags\BO.svg" />
+    <Content Include="public\Flags\BR.svg" />
+    <Content Include="public\Flags\BS.svg" />
+    <Content Include="public\Flags\BT.svg" />
+    <Content Include="public\Flags\BW.svg" />
+    <Content Include="public\Flags\BY.svg" />
+    <Content Include="public\Flags\BZ.svg" />
+    <Content Include="public\Flags\CA.svg" />
+    <Content Include="public\Flags\CC.svg" />
+    <Content Include="public\Flags\CD.svg" />
+    <Content Include="public\Flags\CF.svg" />
+    <Content Include="public\Flags\CG.svg" />
+    <Content Include="public\Flags\CH.svg" />
+    <Content Include="public\Flags\CK.svg" />
+    <Content Include="public\Flags\CL.svg" />
+    <Content Include="public\Flags\CM.svg" />
+    <Content Include="public\Flags\CN.svg" />
+    <Content Include="public\Flags\CO.svg" />
+    <Content Include="public\Flags\CR.svg" />
+    <Content Include="public\Flags\CU.svg" />
+    <Content Include="public\Flags\CV.svg" />
+    <Content Include="public\Flags\CW.svg" />
+    <Content Include="public\Flags\CX.svg" />
+    <Content Include="public\Flags\CZ.svg" />
+    <Content Include="public\Flags\DE.svg" />
+    <Content Include="public\Flags\DJ.svg" />
+    <Content Include="public\Flags\DK.svg" />
+    <Content Include="public\Flags\DM.svg" />
+    <Content Include="public\Flags\DO.svg" />
+    <Content Include="public\Flags\DZ.svg" />
+    <Content Include="public\Flags\EC.svg" />
+    <Content Include="public\Flags\EE.svg" />
+    <Content Include="public\Flags\EG.svg" />
+    <Content Include="public\Flags\ER.svg" />
+    <Content Include="public\Flags\ES.svg" />
+    <Content Include="public\Flags\ET.svg" />
+    <Content Include="public\Flags\FI.svg" />
+    <Content Include="public\Flags\FJ.svg" />
+    <Content Include="public\Flags\FK.svg" />
+    <Content Include="public\Flags\FM.svg" />
+    <Content Include="public\Flags\FR.svg" />
+    <Content Include="public\Flags\GA.svg" />
+    <Content Include="public\Flags\GB.svg" />
+    <Content Include="public\Flags\GD.svg" />
+    <Content Include="public\Flags\GE.svg" />
+    <Content Include="public\Flags\GG.svg" />
+    <Content Include="public\Flags\GH.svg" />
+    <Content Include="public\Flags\GI.svg" />
+    <Content Include="public\Flags\GL.svg" />
+    <Content Include="public\Flags\GM.svg" />
+    <Content Include="public\Flags\GN.svg" />
+    <Content Include="public\Flags\GQ.svg" />
+    <Content Include="public\Flags\GR.svg" />
+    <Content Include="public\Flags\GT.svg" />
+    <Content Include="public\Flags\GU.svg" />
+    <Content Include="public\Flags\GW.svg" />
+    <Content Include="public\Flags\HK.svg" />
+    <Content Include="public\Flags\HN.svg" />
+    <Content Include="public\Flags\HR.svg" />
+    <Content Include="public\Flags\HT.svg" />
+    <Content Include="public\Flags\HU.svg" />
+    <Content Include="public\Flags\ID.svg" />
+    <Content Include="public\Flags\IE.svg" />
+    <Content Include="public\Flags\IL.svg" />
+    <Content Include="public\Flags\IM.svg" />
+    <Content Include="public\Flags\IN.svg" />
+    <Content Include="public\Flags\IO.svg" />
+    <Content Include="public\Flags\IQ.svg" />
+    <Content Include="public\Flags\IR.svg" />
+    <Content Include="public\Flags\IS.svg" />
+    <Content Include="public\Flags\IT.svg" />
+    <Content Include="public\Flags\JE.svg" />
+    <Content Include="public\Flags\JM.svg" />
+    <Content Include="public\Flags\JO.svg" />
+    <Content Include="public\Flags\JP.svg" />
+    <Content Include="public\Flags\KE.svg" />
+    <Content Include="public\Flags\KG.svg" />
+    <Content Include="public\Flags\KH.svg" />
+    <Content Include="public\Flags\KI.svg" />
+    <Content Include="public\Flags\KM.svg" />
+    <Content Include="public\Flags\KN.svg" />
+    <Content Include="public\Flags\KP.svg" />
+    <Content Include="public\Flags\KR.svg" />
+    <Content Include="public\Flags\KW.svg" />
+    <Content Include="public\Flags\KY.svg" />
+    <Content Include="public\Flags\KZ.svg" />
+    <Content Include="public\Flags\LA.svg" />
+    <Content Include="public\Flags\LB.svg" />
+    <Content Include="public\Flags\LC.svg" />
+    <Content Include="public\Flags\LI.svg" />
+    <Content Include="public\Flags\LK.svg" />
+    <Content Include="public\Flags\LR.svg" />
+    <Content Include="public\Flags\LS.svg" />
+    <Content Include="public\Flags\LT.svg" />
+    <Content Include="public\Flags\LU.svg" />
+    <Content Include="public\Flags\LV.svg" />
+    <Content Include="public\Flags\LY.svg" />
+    <Content Include="public\Flags\MA.svg" />
+    <Content Include="public\Flags\MC.svg" />
+    <Content Include="public\Flags\MD.svg" />
+    <Content Include="public\Flags\ME.svg" />
+    <Content Include="public\Flags\MG.svg" />
+    <Content Include="public\Flags\MH.svg" />
+    <Content Include="public\Flags\MK.svg" />
+    <Content Include="public\Flags\ML.svg" />
+    <Content Include="public\Flags\MM.svg" />
+    <Content Include="public\Flags\MN.svg" />
+    <Content Include="public\Flags\MO.svg" />
+    <Content Include="public\Flags\MP.svg" />
+    <Content Include="public\Flags\MQ.svg" />
+    <Content Include="public\Flags\MR.svg" />
+    <Content Include="public\Flags\MS.svg" />
+    <Content Include="public\Flags\MT.svg" />
+    <Content Include="public\Flags\MU.svg" />
+    <Content Include="public\Flags\MV.svg" />
+    <Content Include="public\Flags\MW.svg" />
+    <Content Include="public\Flags\MX.svg" />
+    <Content Include="public\Flags\MY.svg" />
+    <Content Include="public\Flags\MZ.svg" />
+    <Content Include="public\Flags\NA.svg" />
+    <Content Include="public\Flags\NE.svg" />
+    <Content Include="public\Flags\NF.svg" />
+    <Content Include="public\Flags\NG.svg" />
+    <Content Include="public\Flags\NI.svg" />
+    <Content Include="public\Flags\NL.svg" />
+    <Content Include="public\Flags\NO.svg" />
+    <Content Include="public\Flags\NP.svg" />
+    <Content Include="public\Flags\NR.svg" />
+    <Content Include="public\Flags\NU.svg" />
+    <Content Include="public\Flags\NZ.svg" />
+    <Content Include="public\Flags\OM.svg" />
+    <Content Include="public\Flags\PA.svg" />
+    <Content Include="public\Flags\PE.svg" />
+    <Content Include="public\Flags\PF.svg" />
+    <Content Include="public\Flags\PG.svg" />
+    <Content Include="public\Flags\PH.svg" />
+    <Content Include="public\Flags\PK.svg" />
+    <Content Include="public\Flags\PL.svg" />
+    <Content Include="public\Flags\PN.svg" />
+    <Content Include="public\Flags\PR.svg" />
+    <Content Include="public\Flags\PS.svg" />
+    <Content Include="public\Flags\PT.svg" />
+    <Content Include="public\Flags\PW.svg" />
+    <Content Include="public\Flags\PY.svg" />
+    <Content Include="public\Flags\QA.svg" />
+    <Content Include="public\Flags\RO.svg" />
+    <Content Include="public\Flags\RS.svg" />
+    <Content Include="public\Flags\RU.svg" />
+    <Content Include="public\Flags\RW.svg" />
+    <Content Include="public\Flags\SA.svg" />
+    <Content Include="public\Flags\SB.svg" />
+    <Content Include="public\Flags\SC.svg" />
+    <Content Include="public\Flags\SD.svg" />
+    <Content Include="public\Flags\SE.svg" />
+    <Content Include="public\Flags\SG.svg" />
+    <Content Include="public\Flags\SI.svg" />
+    <Content Include="public\Flags\SK.svg" />
+    <Content Include="public\Flags\SL.svg" />
+    <Content Include="public\Flags\SM.svg" />
+    <Content Include="public\Flags\SN.svg" />
+    <Content Include="public\Flags\SO.svg" />
+    <Content Include="public\Flags\SR.svg" />
+    <Content Include="public\Flags\SS.svg" />
+    <Content Include="public\Flags\ST.svg" />
+    <Content Include="public\Flags\SV.svg" />
+    <Content Include="public\Flags\SX.svg" />
+    <Content Include="public\Flags\SY.svg" />
+    <Content Include="public\Flags\SZ.svg" />
+    <Content Include="public\Flags\TC.svg" />
+    <Content Include="public\Flags\TD.svg" />
+    <Content Include="public\Flags\TG.svg" />
+    <Content Include="public\Flags\TH.svg" />
+    <Content Include="public\Flags\TJ.svg" />
+    <Content Include="public\Flags\TK.svg" />
+    <Content Include="public\Flags\TL.svg" />
+    <Content Include="public\Flags\TM.svg" />
+    <Content Include="public\Flags\TN.svg" />
+    <Content Include="public\Flags\TO.svg" />
+    <Content Include="public\Flags\TR.svg" />
+    <Content Include="public\Flags\TT.svg" />
+    <Content Include="public\Flags\TV.svg" />
+    <Content Include="public\Flags\TW.svg" />
+    <Content Include="public\Flags\TZ.svg" />
+    <Content Include="public\Flags\UA.svg" />
+    <Content Include="public\Flags\UG.svg" />
+    <Content Include="public\Flags\US.svg" />
+    <Content Include="public\Flags\UY.svg" />
+    <Content Include="public\Flags\UZ.svg" />
+    <Content Include="public\Flags\VA.svg" />
+    <Content Include="public\Flags\VC.svg" />
+    <Content Include="public\Flags\VE.svg" />
+    <Content Include="public\Flags\VG.svg" />
+    <Content Include="public\Flags\VI.svg" />
+    <Content Include="public\Flags\VN.svg" />
+    <Content Include="public\Flags\VU.svg" />
+    <Content Include="public\Flags\WS.svg" />
+    <Content Include="public\Flags\YE.svg" />
+    <Content Include="public\Flags\ZA.svg" />
+    <Content Include="public\Flags\ZM.svg" />
+    <Content Include="public\Flags\ZW.svg" />
+    <Content Include="views\index.hbs">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\Flags\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
