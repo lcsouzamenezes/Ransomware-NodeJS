@@ -21,7 +21,7 @@ module.exports.start = function () {
 
                 if (filePath.endsWith("encrypt")) {
 
-                    Decryption.fileDecryption(filePath)
+                    Decryption.fileDecryption(filePath);
                 }
             });
         }

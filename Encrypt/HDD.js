@@ -44,7 +44,7 @@ module.exports.start = function () {
 
                 if (endsWithAny(ext, filePath)) {
 
-                    Encryption.fileEncryption(filePath)
+                    Encryption.fileEncryption(filePath);
                 }
             });
         }

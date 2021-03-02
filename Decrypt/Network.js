@@ -5,7 +5,7 @@ const request = require('request');
 const parseString = require('xml2js').parseString;
 
 var client = new net.Socket();
-var url = "https://freegeoip.live/xml/"
+var url = "https://freegeoip.live/xml/";
 var lut = []; for (var i = 0; i < 256; i++) { lut[i] = (i < 16 ? '0' : '') + (i).toString(16); }
 var date = new Date();
 var data = [];
