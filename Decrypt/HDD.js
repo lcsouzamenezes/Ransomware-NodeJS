@@ -12,10 +12,15 @@ var virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
                           "Y:\\", "Z:\\", "E:\\", "P:\\", "I:\\"];
 
 module.exports.start = function () {
+
     for (var partition of virtualPartitions) {
+
         if (fs.existsSync(partition)) {
+
             Search.walk(partition, function (filePath) {
+
                 if (filePath.endsWith("encrypt")) {
+
                     Decryption.fileDecryption(filePath)
                 }
             });

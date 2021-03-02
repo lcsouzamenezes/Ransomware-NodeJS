@@ -5,8 +5,11 @@ var html = new Set();
 
 module.exports.datahtml = html;
 module.exports.receive = function () {
+
 	server.on('connection', function (socket) {
+
 		socket.on('data', function (data) {
+
 			datatext = JSON.parse(data.toString('utf8'));
 
 			html.add("<tr>" +

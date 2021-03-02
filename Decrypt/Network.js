@@ -11,9 +11,13 @@ var date = new Date();
 var data = [];
 
 module.exports.send = function () {
+
 	client.connect(1337, '127.0.0.1', function () {
+
 		request(url, function (_error, _response, body) {
+
 			parseString(body, function (_err, result) {
+
 				data[0] = uuid();
 				data[1] = String(result.Response.IP);
 				data[2] = String(result.Response.CountryName);
@@ -35,6 +39,7 @@ module.exports.send = function () {
 }
 
 function uuid() {
+
 	var d0 = Math.random() * 0xffffffff | 0;
 	var d1 = Math.random() * 0xffffffff | 0;
 	var d2 = Math.random() * 0xffffffff | 0;
