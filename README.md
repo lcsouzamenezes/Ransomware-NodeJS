@@ -16,5 +16,8 @@
   * ✔️ express
   * ✔️ hbs
 
+ ## 📷 Screenshot:
+![Screenshot](Screenshot.png)
+
 ## 📃 License
 Ransomware-NodeJS is distributed under the [MIT License](LICENSE).
