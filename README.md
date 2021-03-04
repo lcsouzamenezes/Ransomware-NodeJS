@@ -4,8 +4,9 @@
  By using Ransomware-NodeJS or any files included, you understand that you are AGREEING TO USE AT YOUR OWN RISK. Once again Ransomware-NodeJS files included are for EDUCATION and/or RESEARCH purposes ONLY.
  Ransomware-NodeJS is ONLY intended to be used on your own pentesting labs, or with explicit consent from the owner of the property being tested.** 
 
-[![GitHub](https://img.shields.io/github/license/kadzicuh/Ransomware-NodeJS?style=flat-square)](LICENSE)
-[![NodeJS](https://img.shields.io/badge/NodeJS-15.9.0+-success.svg?style=flat-square)](https://nodejs.org/dist/v15.9.0/)
+[![GitHub](https://img.shields.io/github/license/kadzicuh/Ransomware-NodeJS?style=flat)](LICENSE)
+[![NodeJS](https://img.shields.io/badge/NodeJS-15.9.0+-success.svg?style=flat)](https://nodejs.org/dist/v15.9.0/)
+![example workflow](https://github.com/kadzicuh/Ransomware-NodeJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
 ## 📃 Requirements
 * 📌 NodeJS
