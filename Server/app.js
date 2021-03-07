@@ -3,7 +3,14 @@ const server = net.createServer();
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true, useNewUrlParser: true }, function (err) {
+
+    if (err) {
+        return console.log(err)
+    }
+
+    server.listen(1337, '127.0.0.1');
+});
 
 const userScheme = new Schema({
 
@@ -54,5 +61,3 @@ server.on('connection', function (socket) {
         });
 	});
 });
-
-server.listen(1337, '127.0.0.1');
