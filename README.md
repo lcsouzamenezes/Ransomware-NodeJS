@@ -12,8 +12,8 @@
 
 ## 📃 Requirements
 * 📌 Libraries
-* * ✔️ mongodb
-* * ✔️ mongoose
+  * ✔️ mongodb
+  * ✔️ mongoose
   * ✔️ request
   * ✔️ xml2js
   * ✔️ express
