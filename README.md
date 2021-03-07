@@ -6,6 +6,8 @@
 
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Ransomware-NodeJS?style=flat)](LICENSE)
 [![NodeJS](https://img.shields.io/badge/NodeJS-15.9.0+-success.svg?style=flat)](https://nodejs.org/en/download/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4.4.4+-success.svg?style=flat)](https://www.mongodb.com/try/download/community)
+[![Mongoose](https://img.shields.io/badge/Mongoose-5.11.19+-success.svg?style=flat)](https://mongoosejs.com/)
 ![example workflow](https://github.com/kadzicuh/Ransomware-NodeJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
 ## 📃 Requirements
