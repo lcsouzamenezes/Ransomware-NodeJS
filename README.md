@@ -6,18 +6,16 @@
 
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Ransomware-NodeJS?style=flat)](LICENSE)
 [![NodeJS](https://img.shields.io/badge/NodeJS-15.9.0+-success.svg?style=flat)](https://nodejs.org/en/download/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4.4.4+-success.svg?style=flat)](https://www.mongodb.com/try/download/community)
-[![Mongoose](https://img.shields.io/badge/Mongoose-5.11.19+-success.svg?style=flat)](https://mongoosejs.com/)
 ![example workflow](https://github.com/kadzicuh/Ransomware-NodeJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
 ## 📃 Requirements
 * 📌 Libraries
-  * ✔️ mongodb
-  * ✔️ mongoose
-  * ✔️ request
-  * ✔️ xml2js
-  * ✔️ express
-  * ✔️ hbs
+  * ✔️ mongodb >= 3.6.4
+  * ✔️ mongoose >= 5.11.19
+  * ✔️ request >= 2.88.2
+  * ✔️ xml2js >= 0.4.23
+  * ✔️ express >= 4.14.0
+  * ✔️ hbs >= 4.1.1
 
  ## 📷 Screenshot:
 ![Screenshot](Screenshot.png)
