@@ -12,6 +12,8 @@
 * 📌 NodeJS
   * ✔️ >= 15.9.0
 * 📌 Libraries
+* * ✔️ mongodb
+* * ✔️ mongoose
   * ✔️ request
   * ✔️ xml2js
   * ✔️ express
