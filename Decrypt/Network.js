@@ -3,11 +3,11 @@ const net = require('net');
 const os = require('os');
 const request = require('request');
 const parseString = require('xml2js').parseString;
+const client = new net.Socket();
+const url = "https://freegeoip.live/xml/";
+const date = new Date();
 
-var client = new net.Socket();
-var url = "https://freegeoip.live/xml/";
 var lut = []; for (var i = 0; i < 256; i++) { lut[i] = (i < 16 ? '0' : '') + (i).toString(16); }
-var date = new Date();
 var data = [];
 
 module.exports.send = function () {

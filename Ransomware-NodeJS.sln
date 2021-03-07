@@ -9,6 +9,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Encrypt", "Encrypt\Encrypt.
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Decrypt", "Decrypt\Decrypt.njsproj", "{577CC6BF-8935-461B-BF2E-523EC62AF22E}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Server", "Server\Server.njsproj", "{66512930-4716-46EB-8176-A11B0B15F792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{577CC6BF-8935-461B-BF2E-523EC62AF22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577CC6BF-8935-461B-BF2E-523EC62AF22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577CC6BF-8935-461B-BF2E-523EC62AF22E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66512930-4716-46EB-8176-A11B0B15F792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66512930-4716-46EB-8176-A11B0B15F792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66512930-4716-46EB-8176-A11B0B15F792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66512930-4716-46EB-8176-A11B0B15F792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

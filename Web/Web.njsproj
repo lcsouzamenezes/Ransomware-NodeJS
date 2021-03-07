@@ -31,9 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="Network.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="package.json" />
     <Content Include="public\Flags\AD.svg" />
     <Content Include="public\Flags\AE.svg" />

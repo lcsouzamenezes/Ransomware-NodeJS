@@ -4,7 +4,7 @@ const fs = require('fs');
 const Search = require('./Search');
 const Decryption = require('./Decryption');
 
-var virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
+const virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
                           "K:\\", "L:\\", "M:\\", "N:\\", "O:\\",
                           "D:\\", "A:\\", "B:\\", "F:\\", "Q:\\",
                           "G:\\", "H:\\", "R:\\", "S:\\", "J:\\",
