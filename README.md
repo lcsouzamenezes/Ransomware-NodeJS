@@ -11,8 +11,6 @@
 ![example workflow](https://github.com/kadzicuh/Ransomware-NodeJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
 ## 📃 Requirements
-* 📌 NodeJS
-  * ✔️ >= 15.9.0
 * 📌 Libraries
 * * ✔️ mongodb
 * * ✔️ mongoose
