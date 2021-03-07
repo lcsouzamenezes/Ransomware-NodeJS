@@ -13,7 +13,7 @@
           crossorigin="anonymous" />
     <title>Ransomware-Node.JS</title>
 </head>
-<body class="bg-light">
+<body class="bg-light" style="cursor: default">
     <header class="bg-white shadow-sm position-fixed fixed-top">
         <nav class="navbar">
             <h2 class="ms-4" style="font-family: 'Open Sans', sans-serif;">
@@ -23,23 +23,23 @@
     </header>
     <main>
         <div class="mt-5 pt-5">
-            <div class="container-fluid bg-white">
-                <div class="table-responsive-sm shadow-sm">
-                    <table class="table table-bordered font-monospace">
-                        <thead class="table-dark">
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <table class="table font-monospace shadow-sm bg-white">
+                        <thead>
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">IPAddress</th>
-                                <th scope="col">Country</th>
-                                <th scope="col">Flag</th>
+                                <th scope="col">IP</th>
+                                <th scope="col">COUNTRY</th>
+                                <th scope="col">FLAG</th>
                                 <th scope="col">PC</th>
-                                <th scope="col">User</th>
+                                <th scope="col">USER</th>
                                 <th scope="col">OS</th>
-                                <th scope="col">TimeZone</th>
-                                <th scope="col">DateTime</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Key</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">TIMEZONE</th>
+                                <th scope="col">DATETIME</th>
+                                <th scope="col">PRICE</th>
+                                <th scope="col">KEY</th>
+                                <th scope="col">STATUS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -59,13 +59,8 @@
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"></script>
     <script>
-      $(".Status:contains('Encrypted')").addClass("badge bg-success");
-      $(".Status:contains('Decrypted')").addClass("badge bg-danger");
-      $(".Price").addClass("badge bg-warning text-dark");
-      $(".Key").addClass("badge bg-dark");
-      $(".ID").addClass("fw-bold");
-      $(".navbar h2").css("cursor", "default");
-      $("table").css("cursor", "default");
+      $(".Status:contains('Encrypted')").addClass("badge rounded-pill badge bg-success");
+      $(".Status:contains('Decrypted')").addClass("badge rounded-pill badge bg-warning text-dark");
     </script>
 </body>
 </html>
