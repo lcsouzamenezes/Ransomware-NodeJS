@@ -17,6 +17,15 @@
   * ✔️ express >= 4.14.0
   * ✔️ hbs >= 4.1.1
 
+## 📃 Usage:
+```
+node Server/app.js
+node Web/app.js
+
+node Encrypt/app.js
+node Decrypt/app.js
+```
+
  ## 📷 Screenshot:
 ![Screenshot](Screenshot.png)
 
