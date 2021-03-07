@@ -63,6 +63,6 @@ app.get('/', function (_req, res) {
                 "</tr>");
         }
 
-        res.render('index', { data: dataHTML });
+        res.render('index', { data: Array.from(dataHTML).reverse() });
     });
 });
