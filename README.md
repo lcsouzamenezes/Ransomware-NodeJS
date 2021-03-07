@@ -5,10 +5,11 @@
  Ransomware-NodeJS is ONLY intended to be used on your own pentesting labs, or with explicit consent from the owner of the property being tested.** 
 
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Ransomware-NodeJS?style=flat)](LICENSE)
-[![NodeJS](https://img.shields.io/badge/NodeJS-15.9.0+-success.svg?style=flat)](https://nodejs.org/en/download/)
 ![example workflow](https://github.com/kadzicuh/Ransomware-NodeJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
 ## 📃 Requirements
+* 📌 NodeJS
+  * ✔️ >= 15.9.0
 * 📌 Libraries
   * ✔️ mongodb >= 3.6.4
   * ✔️ mongoose >= 5.11.19
