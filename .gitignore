@@ -456,3 +456,4 @@ dist
 /Web/package-lock.json
 /Encrypt/package-lock.json
 /Server/package-lock.json
+/Decrypt/package-lock.json

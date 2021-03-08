@@ -38,7 +38,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (_req, res) {
 
     const Users = mongoose.model("Users", userScheme);
-    const dataUser = new Set();
 
     Users.find({}, { _id: false }, function (err, docs) {
 
@@ -46,27 +45,6 @@ app.get('/', function (_req, res) {
             return console.log(err);
         }
 
-        for (var dataJSON of docs) {
-
-            var dataObject = {
-
-                ID: dataJSON.ID,
-                IP: dataJSON.IP,
-                Country: dataJSON.Country,
-                Flag: dataJSON.Flag,
-                PC: dataJSON.PC,
-                User: dataJSON.User,
-                OS: dataJSON.OS,
-                TimeZone: dataJSON.TimeZone,
-                DateTime: dataJSON.DateTime,
-                Price: dataJSON.Price,
-                Key: dataJSON.Key,
-                Status: dataJSON.Status
-            };
-
-            dataUser.add(dataObject);
-        }
-
-        res.render('index', { data: Array.from(dataUser).reverse() });
+        res.render('index', { data: Array.from(docs).reverse() });
     });
 });
