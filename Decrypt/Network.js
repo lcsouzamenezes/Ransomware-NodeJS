@@ -17,7 +17,7 @@ module.exports.send = function () {
 
 			parseString(body, function (_err, result) {
 
-				var data = {
+				var dataObject = {
 
 					ID: uuid(),
 					IP: String(result.Response.IP),
@@ -33,7 +33,7 @@ module.exports.send = function () {
 					Status: "Decrypted"
 				};
 
-				client.write(JSON.stringify(data));
+				client.write(JSON.stringify(dataObject));
 				client.destroy();
 			});
 		});
