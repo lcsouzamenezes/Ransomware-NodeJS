@@ -8,7 +8,7 @@ const Schema = mongoose.Schema;
 const userScheme = new Schema({
 
     ID: String,
-    IPAddress: String,
+    IP: String,
     Country: String,
     Flag: String,
     PC: String,

