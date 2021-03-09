@@ -1,8 +1,8 @@
 'use strict';
 const os = require('os');
 const fs = require('fs');
-const Search = require('./Search');
-const Decryption = require('./Decryption');
+const searchData = require('./searchData');
+const decryptData = require('./decryptData');
 
 const virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
                            "K:\\", "L:\\", "M:\\", "N:\\", "O:\\",
@@ -11,17 +11,17 @@ const virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
                            "U:\\", "W:\\", "V:\\", "X:\\", "T:\\",
                            "Y:\\", "Z:\\", "E:\\", "P:\\", "I:\\"];
 
-module.exports.start = function () {
+module.exports.scan = function () {
 
     for (var partition of virtualPartitions) {
 
         if (fs.existsSync(partition)) {
 
-            Search.walk(partition, function (filePath) {
+            searchData.walk(partition, function (filePath) {
 
                 if (filePath.endsWith("encrypt")) {
 
-                    Decryption.fileDecryption(filePath);
+                    decryptData.fileDecryption(filePath);
                 }
             });
         }

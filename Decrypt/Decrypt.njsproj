@@ -29,20 +29,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="Decryption.js">
+    <Content Include="decryptData.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="HDD.js">
+    <Content Include="virtualPartitions.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Key.js">
+    <Content Include="keyData.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Network.js">
+    <Content Include="sendData.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
-    <Content Include="Search.js">
+    <Content Include="searchData.js">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>

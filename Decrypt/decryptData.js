@@ -1,7 +1,7 @@
 'use strict';
 const crypto = require('crypto');
 const fs = require('fs');
-const Key = require('./Key');
+const keyData = require('./keyData');
 
 module.exports.fileDecryption = function (file) {
 
@@ -14,7 +14,7 @@ module.exports.fileDecryption = function (file) {
 
 var decrypt = (hash) => {
 
-    var decipher = crypto.createDecipheriv('aes-256-ctr', Key.key, Buffer.from(hash.iv, 'hex'));
+    var decipher = crypto.createDecipheriv('aes-256-ctr', keyData.key, Buffer.from(hash.iv, 'hex'));
 
     var decrpyted = Buffer.concat([decipher.update(Buffer.from(hash.content, 'hex')), decipher.final()]);
 

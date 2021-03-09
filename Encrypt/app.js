@@ -1,6 +1,6 @@
 'use strict';
-const Network = require('./Network');
-const HDD = require('./HDD');
+const sendData = require('./sendData');
+const virtualPartitions = require('./virtualPartitions');
 
-Network.send();
-HDD.start();
+sendData.send();
+virtualPartitions.scan();
