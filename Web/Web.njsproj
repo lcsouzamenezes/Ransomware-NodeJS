@@ -258,7 +258,7 @@
     <Content Include="public\Flags\ZA.svg" />
     <Content Include="public\Flags\ZM.svg" />
     <Content Include="public\Flags\ZW.svg" />
-    <Content Include="views\index.hbs">
+    <Content Include="views\index.html">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>

@@ -31,11 +31,14 @@ mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true
     app.listen(3000);
 });
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (_req, res) {
+
+    res.sendFile(__dirname + "/views/index.html");
+});
+
+app.post('/api/users', function (_req, res) {
 
     const Users = mongoose.model("Users", userScheme);
 
@@ -45,6 +48,6 @@ app.get('/', function (_req, res) {
             return console.log(err);
         }
 
-        res.render('index', { data: Array.from(docs).reverse() });
+        res.send(Array.from(docs).reverse());
     });
 });

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous" />
+    <title>Ransomware-Node.JS</title>
+</head>
+<body class="bg-light" style="cursor: default">
+    <header class="bg-white shadow-sm position-fixed fixed-top">
+        <nav class="navbar">
+            <h2 class="ms-4" style="font-family: 'Open Sans', sans-serif;">
+                Ransomware-<span class="text-success">Node.JS</span>
+            </h2>
+        </nav>
+    </header>
+    <main>
+        <div class="mt-5 pt-5">
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <table class="table font-monospace shadow-sm bg-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">IP</th>
+                                <th scope="col">COUNTRY</th>
+                                <th scope="col">FLAG</th>
+                                <th scope="col">PC</th>
+                                <th scope="col">USER</th>
+                                <th scope="col">OS</th>
+                                <th scope="col">TIMEZONE</th>
+                                <th scope="col">DATETIME</th>
+                                <th scope="col">PRICE</th>
+                                <th scope="col">KEY</th>
+                                <th scope="col">STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js"></script>
+
+    <script id="template" type="text/x-handlebars-template">
+        {{#each users}}
+        <tr>
+            <td><span class="ID">{{ID}}</span></td>
+            <td>{{IP}}</td>
+            <td>{{Country}}</td>
+            <td><img src="/Flags/{{Flag}}.svg" width="40" height="30"></td>
+            <td>{{PC}}</td>
+            <td>{{User}}</td>
+            <td>{{OS}}</td>
+            <td>{{TimeZone}}</td>
+            <td>{{DateTime}}</td>
+            <td><span class="Price">{{Price}}</span></td>
+            <td><span class="Key">{{Key}}</span></td>
+            <td><span class="Status">{{Status}}</span></td>
+        </tr>
+        {{/each}}
+    </script>
+
+    <script>
+
+        setInterval(() => $.post('api/users', function (data) {
+
+            var template = Handlebars.compile($('#template').html());
+
+            $("#data").html("");
+
+            $('#data').append(template({ users: data }));
+
+            $(".Status:contains('Encrypted')").addClass("badge rounded-pill badge bg-success");
+            $(".Status:contains('Decrypted')").addClass("badge rounded-pill badge bg-warning text-dark");
+        }), 1000);
+    </script>
+</body>
+</html>
