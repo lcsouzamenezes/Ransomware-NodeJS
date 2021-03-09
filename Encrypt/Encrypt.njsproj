@@ -36,6 +36,9 @@
     <Content Include="HDD.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Key.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Network.js">
       <SubType>Code</SubType>
     </Content>

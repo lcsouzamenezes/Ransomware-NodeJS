@@ -1,10 +1,7 @@
 'use strict';
 const crypto = require('crypto');
 const fs = require('fs');
-
-const algorithm = 'aes-256-ctr';
-const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
-const iv = crypto.randomBytes(16);
+const Key = require('./Key');
 
 module.exports.fileEncryption = function (file) {
 
@@ -17,7 +14,9 @@ module.exports.fileEncryption = function (file) {
 
 var encrypt = (text) => {
 
-    var cipher = crypto.createCipheriv(algorithm, secretKey, iv);
+    const iv = crypto.randomBytes(16);
+
+    var cipher = crypto.createCipheriv('aes-256-ctr', Key.key, iv);
 
     var encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
 
