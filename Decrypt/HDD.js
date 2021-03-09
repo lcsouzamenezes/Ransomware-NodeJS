@@ -5,11 +5,11 @@ const Search = require('./Search');
 const Decryption = require('./Decryption');
 
 const virtualPartitions = ["C:\\Users\\" + os.userInfo().username,
-                          "K:\\", "L:\\", "M:\\", "N:\\", "O:\\",
-                          "D:\\", "A:\\", "B:\\", "F:\\", "Q:\\",
-                          "G:\\", "H:\\", "R:\\", "S:\\", "J:\\",
-                          "U:\\", "W:\\", "V:\\", "X:\\", "T:\\",
-                          "Y:\\", "Z:\\", "E:\\", "P:\\", "I:\\"];
+                           "K:\\", "L:\\", "M:\\", "N:\\", "O:\\",
+                           "D:\\", "A:\\", "B:\\", "F:\\", "Q:\\",
+                           "G:\\", "H:\\", "R:\\", "S:\\", "J:\\",
+                           "U:\\", "W:\\", "V:\\", "X:\\", "T:\\",
+                           "Y:\\", "Z:\\", "E:\\", "P:\\", "I:\\"];
 
 module.exports.start = function () {
 
