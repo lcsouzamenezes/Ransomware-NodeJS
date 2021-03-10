@@ -10,8 +10,10 @@
 ## 📃 Requirements
 * 📌 NodeJS
   * ✔️ >= 15.9.0
+* 📌 MongoDB
+  * ✔️ >= 4.4.4
 * 📌 Libraries
-  * ✔️ mongodb >= 3.6.4
+  * ✔️ mongodb driver >= 3.6.4
   * ✔️ mongoose >= 5.11.19
   * ✔️ request >= 2.88.2
   * ✔️ xml2js >= 0.4.23
