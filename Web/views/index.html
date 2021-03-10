@@ -77,7 +77,7 @@
 
             var template = Handlebars.compile($('#template').html());
 
-            $('#data').html('');
+            $("#data").html("");
             $('#data').append(template({ users: data }));
 
             $(".Status:contains('Encrypted')").addClass("badge rounded-pill badge bg-success");
