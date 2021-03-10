@@ -1,9 +1,9 @@
 const net = require('net');
 const server = net.createServer();
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true, useNewUrlParser: true }, function (err) {
+mongoose.connect('mongodb://localhost:27017/usersdb', { useUnifiedTopology: true, useNewUrlParser: true }, function (err) {
 
     if (err) {
         return console.log(err)
@@ -12,7 +12,7 @@ mongoose.connect("mongodb://localhost:27017/usersdb", { useUnifiedTopology: true
     server.listen(1337, '127.0.0.1');
 });
 
-const userScheme = new Schema({
+const Users = mongoose.model('Users', new Schema({
 
     ID: String,
     IP: String,
@@ -27,9 +27,7 @@ const userScheme = new Schema({
     Key: String,
     Status: String
 
-}, { versionKey: false });
-
-const Users = mongoose.model("Users", userScheme);
+}, { versionKey: false }));
 
 server.on('connection', function (socket) {
 
