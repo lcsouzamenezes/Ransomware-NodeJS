@@ -54,5 +54,5 @@ function dateTime() {
 		+ ("0" + date.getDate()).slice(-2) + " "
 		+ date.getHours() + ":"
 		+ date.getMinutes() + ":"
-		+ date.getSeconds()
+		+ date.getSeconds();
 }

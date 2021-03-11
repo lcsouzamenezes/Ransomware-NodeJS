@@ -75,7 +75,7 @@
     <script>
         setInterval(() => $.post('api/users', function (data) {
 
-            var template = Handlebars.compile($('#template').html());
+            const template = Handlebars.compile($('#template').html());
 
             $('#data').html('');
             $('#data').append(template({ users: data }));

@@ -35,7 +35,7 @@ server.on('connection', function (socket) {
 
     socket.on('data', function (data) {
 
-        var dataUser = JSON.parse(data.toString('utf8'))
+        const dataUser = JSON.parse(data.toString('utf8'));
 
         const User = new Users({
 
